@@ -1,8 +1,14 @@
+##author
+```
+name: xiaozhenggaomashi
+```
+
+**Dependency tools**
 ```
 yarn - v1.5.1
 ```
 
-** To Start **
+**To Start**
 ```
 mkdir xw-weapp-next
 cd xw-weapp-next
@@ -11,7 +17,7 @@ yarn install --save react react-dom next
 mkdir pages
 ```
 
-** Start Server **
+**Start Server**
 open the "package.json" in the xw-weapp-next directory and add the following NPM script.
 ```
 {
