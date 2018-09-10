@@ -1,1 +1,0 @@
-module.exports=__NEXT_REGISTER_PAGE("/",function(){var e=webpackJsonp([3],{180:function(e,t,n){e.exports=n(181)},181:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:true});var r=n(12);var u=n.n(r);var a=function e(){return u.a.createElement("div",null,u.a.createElement("p",null,"小郑子"))};t["default"]=a}},[180]);return{page:e.default}});

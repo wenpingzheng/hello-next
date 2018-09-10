@@ -67,24 +67,25 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-module.exports = __webpack_require__(4);
-
-
-/***/ }),
-/* 4 */
+/***/ "/Users/zhengwenping/works/www/xw-weapp-next/node_modules/next/dist/pages/_error.js":
 /***/ (function(module, exports) {
 
-module.exports = require("/Users/zhengwenping/works/www/frame-project-item/hello-next/node_modules/next/dist/pages/_error.js");
+module.exports = require("/Users/zhengwenping/works/www/xw-weapp-next/node_modules/next/dist/pages/_error.js");
+
+/***/ }),
+
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("/Users/zhengwenping/works/www/xw-weapp-next/node_modules/next/dist/pages/_error.js");
+
 
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=_error.js.map
