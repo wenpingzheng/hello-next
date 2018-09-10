@@ -1,4 +1,4 @@
-##author
+## author
 ```
 name: xiaozhenggaomashi
 ```
@@ -18,7 +18,9 @@ mkdir pages
 ```
 
 **Start Server**
+
 open the "package.json" in the xw-weapp-next directory and add the following NPM script.
+
 ```
 {
     "scripts": {
