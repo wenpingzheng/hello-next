@@ -1,0 +1,9 @@
+
+# main
+.next/
+out/
+
+# Dependency Directories
+node_modules/
+
+
