@@ -1,10 +1,14 @@
 ## author
 ```
 name: xiaozhenggaomashi
+time: 2017-10-09
+uptime: 2018-09-10
 ```
 
 **Dependency tools**
 ```
+node - v6.9.1
+npm - 3.10.8
 yarn - v1.5.1
 ```
 
