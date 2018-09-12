@@ -4,7 +4,13 @@
 
 const Index = () => (
   <div>
-    <p>小郑子</p>
+    <p>首页</p>
+    <style jsx>{`
+      p{
+        font-size:24px;
+        font-weight:800;
+      }
+    `}</style>
   </div>
 )
 
