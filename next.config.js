@@ -1,7 +1,4 @@
 
-const webpack = require('webpack');
-
-
 module.exports = {
   exportPathMap: () => {
     return {
