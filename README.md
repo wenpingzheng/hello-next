@@ -1,8 +1,9 @@
 ## author
 ```
-@name: xiaozhenggaomashi
-@time: 2017-10-09
-@uptime: 2018-09-10
+@Name: xiaozhenggaomashi
+@Chinese name: 小郑搞码事
+@Time: 2017-10-09
+@Uptime: 2018-09-12
 ```
 
 ## Dependency tools
