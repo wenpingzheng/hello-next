@@ -11,7 +11,7 @@ node - v6.9.1
 npm - 3.10.8
 yarn - v1.5.1
 ```
-## To Start
+## To Start the dev Server
 
 **STEP 1**
 
@@ -70,7 +70,7 @@ Then run the following commands.
 ```
 npm run build
 ``` 
-Of course yan can use yarn to build it also, like this
+Of course, yan can use yarn to build it also, like this
 ```
 yarn build
 ``` 
