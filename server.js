@@ -12,6 +12,15 @@ const handler = routes.getRequestHandler(app, ({req, res, route, query}) => {
   app.render(req, res, route.page, query)
 })
 
+// 服务端渲染函数
+const serverHandler = (req, res) => {
+  let query = {}
+  query.name = 'wp'
+  query.subname = 'zwp'
+  // 根据不同的的类型来渲染不同的文件
+  app.render(req, res, '/video', query)
+}
+
 app.prepare()
   .then(() => {
 
@@ -29,7 +38,11 @@ app.prepare()
 
     // 匹配处理
     const requestListener = (req, res) => {
-      return handler(req, res)
+      if(req.url.startsWith('/video')) {
+        return serverHandler(req, res)
+      } else {
+        return handler(req, res)
+      }
     }
 
     // 监听返回
