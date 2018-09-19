@@ -4,6 +4,7 @@
 @Chinese name: 小郑搞码事
 @Time: 2017-10-09
 @Uptime: 2018-09-12
+@data: https://pacaio.match.qq.com/xw/rcdVideo?t=1537249963125&callback=__jp6
 ```
 
 ## Dependency tools
@@ -89,6 +90,12 @@ mkdir layouts
   yarn add next-routes --save
 ```
 Then to start your project.
+
+## install others
+```
+yarn add axios --save
+yarn add jsonp --save
+```
 
 Any other questions, communcation with xiaozheng. 
 

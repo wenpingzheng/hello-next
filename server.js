@@ -5,6 +5,8 @@ const http = require('http')
 const next = require('next')
 const fs = require('fs')
 
+
+
 // 判断生产环境
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -17,6 +19,17 @@ const serverHandler = (req, res) => {
   let query = {}
   query.name = 'wp'
   query.subname = 'zwp'
+  /*
+  axios.get(apiUrl)
+    .then((response) => {
+      let apiDataObj = response.data
+      query.apiData = JSON.stringify(apiDataObj)
+      app.render(req, res, '/video', query)
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+    */
   // 根据不同的的类型来渲染不同的文件
   app.render(req, res, '/video', query)
 }
