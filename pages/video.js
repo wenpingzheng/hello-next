@@ -8,6 +8,7 @@
 
 import { Component } from 'react'
 import jsonp from '../libs/isomorphic-jsonp'
+import VideoWrap from '../components/common/item'
 
 /**
  * 获取数据函数
@@ -27,7 +28,7 @@ export default class extends Component {
     this.state = {
       name: '',
       subname: '',
-      data: ['列表一', '列表二', '列表三', '列表四'],
+      data: [],
     }
   }
 
@@ -41,16 +42,17 @@ export default class extends Component {
 
   render() {
     const { name, subname, apiData } = this.props
-    console.log(apiData)
-    /*
-    let listContent = data.map((item, index) => {
-      
-    })*/
+    let listContent = apiData.map((item, index) => {
+      return <VideoWrap data={item} key={`v_${index}`}/>
+    })
 
     return (
       <div>
         <h2>子名称{subname}</h2>
         <p>频道页{name}</p>
+        <div className="content-wrap">
+          {listContent}
+        </div>
         <style jsx>{`
           p{
             font-size:24px;
