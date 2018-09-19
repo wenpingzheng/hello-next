@@ -87,7 +87,7 @@ mkdir layouts
 
 ## routes
 ```
-  yarn add next-routes --save
+yarn add next-routes --save
 ```
 Then to start your project.
 
