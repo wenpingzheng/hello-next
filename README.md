@@ -96,6 +96,40 @@ Then to start your project.
 yarn add axios --save
 yarn add jsonp --save
 ```
+Sometimes, we need do something to promise our project strong. so 
+
+## 相关处理技术
+
+**一、客户端和服务端获取数据方法封装（/libs/isomorphic-jsonp）**
+
+```
+yarn add axios jsonp --save
+```
+将axiox和jsonp封装成一个项目中使用的获取数据的方法JS。
+
+promise允许使用两种方式接收数据：
+
+1、then函数中接收
+
+2、async -> await等着数据返回
+
+**二、项目中使用load-script加载js文件&&qs解析参数**
+```
+yarn add load-script qs --save
+```
+引用方式
+
+const qs = require('qs')
+
+qs.parse(url)
+
+qs.stringify(obj)
+
+const load = require('load-script')
+
+load('demo.js',() => {
+
+})
 
 Any other questions, communcation with xiaozheng. 
 
