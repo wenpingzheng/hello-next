@@ -96,6 +96,10 @@ Then to start your project.
 yarn add axios --save
 yarn add jsonp --save
 ```
+Any other questions, communcation with xiaozheng. 
+
+The end !!
+
 Sometimes, we need do something to promise our project strong. so 
 
 ## 相关处理技术
@@ -118,22 +122,15 @@ promise允许使用两种方式接收数据：
 yarn add load-script qs --save
 ```
 引用方式
-
+```
 const qs = require('qs')
-
 qs.parse(url)
-
 qs.stringify(obj)
 
 const load = require('load-script')
-
 load('demo.js',() => {
-
 })
-
-Any other questions, communcation with xiaozheng. 
-
-The end !!
+```
 
 
 
