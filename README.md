@@ -9,7 +9,7 @@
 
 ## Dependency tools
 ```
-node - v6.9.1
+node - v8.11.0
 npm  - 3.10.8
 yarn - v1.5.1
 ```
@@ -131,6 +131,49 @@ const load = require('load-script')
 load('demo.js',() => {
 })
 ```
+
+**三、关于配置文件**
+
+next.js框架自带webpack和babel，同时也提供自定义改变配置参数。
+
+1、将中文转成\u编码，防止因浏览器编码不一样页面渲染出现乱码
+```
+// 调整UglifyJs配置
+for (const plugin of config.plugins) {
+  if (plugin.constructor.name === 'UglifyJsPlugin') {
+    plugin.options.uglifyOptions.output = plugin.options.uglifyOptions.output || {};
+    plugin.options.uglifyOptions.output.ascii_only = true;
+    plugin.options.uglifyOptions.output.comments = false;
+  }
+}
+```
+
+**安装core-js和raf**
+
+```
+yarn add core-js raf --save
+```
+2、入口main.js文件添加polyfill，解决一些浏览兼容性问题
+```
+const originalEntry = config.entry 
+config.entry = async () => {
+  const entries = await originalEntry()
+  if(entries['main.js']) {
+    entries['main.js'].unshift('core-js/es6/map', 'core-js/es6/set', 'core-js/es6/object', 'raf/polyfill')
+  }
+  return entries
+}
+```
+注意：要运行async，必须将node升级到v7.6以上才加入这个函数
+
+升级node的方法-这里用n来升级到指定版本
+```
+npm install -g n
+n v8.11.0
+```
+
+
+
 
 
 
