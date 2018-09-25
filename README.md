@@ -174,7 +174,7 @@ n v8.11.0
 
 ## 生成文件
 ```
-|– .next                 dev(执行)      build(转换)
+|– .next                 dev(执行)      build(转换)
 |    |– bundles           访问生成        压缩    -- 编译后的代码
 |    |- dist
 |    |   |- bundles       访问生成       未压缩   -- 编译后的源代码
