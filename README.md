@@ -172,6 +172,19 @@ npm install -g n
 n v8.11.0
 ```
 
+## 生成文件
+```
+|– .next                 dev(执行)      build(转换)
+|    |– bundles           访问生成        压缩    -- 编译后的代码
+|    |- dist
+|    |   |- bundles       访问生成       未压缩   -- 编译后的源代码
+|    |- main.js    -- 入口文件（资源调用的依赖关系）
+|
+|- out -- export(导出)
+|   |- _next -- 输出JS文件
+|   |- index.html -- 输出静态文件
+|
+```
 
 
 
