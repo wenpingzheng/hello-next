@@ -3,6 +3,7 @@
  */
 
 import { Component } from 'react'
+import Layout from '../layouts/CoreLayout'
 
 export default class extends Component {
   constructor(props) {
@@ -23,7 +24,9 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <p>频道页{this.props.name}</p>
+        <Layout title="频道页">
+          <p>频道页{this.props.name}</p>
+        </Layout>
         <style jsx>{`
           p{
             font-size:24px;

@@ -7,6 +7,7 @@
  */
 
 import { Component } from 'react'
+import Layout from '../layouts/CoreLayout'
 import jsonp from '../libs/isomorphic-jsonp'
 import VideoWrap from '../components/common/item'
 
@@ -48,11 +49,13 @@ export default class extends Component {
 
     return (
       <div>
-        <h2>子名称{subname}</h2>
-        <p>频道页{name}</p>
-        <div className="content-wrap">
-          {listContent}
-        </div>
+        <Layout title="视频">
+          <h2>子名称{subname}</h2>
+          <p>频道页{name}</p>
+          <div className="content-wrap">
+            {listContent}
+          </div>
+        </Layout>
         <style jsx>{`
           p{
             font-size:24px;
