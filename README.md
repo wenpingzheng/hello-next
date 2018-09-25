@@ -173,17 +173,34 @@ n v8.11.0
 ```
 
 ## 生成文件
+
+首先使用yarn next build 在.next文件下生成一个BUILD_ID
+
+其次使用yarn next export根据这个BUILD_ID导出静态文件及依赖JS在out目录下
 ```
-|– .next                 dev(执行)      build(转换)
-|    |– bundles           访问生成        压缩    -- 编译后的代码
-|    |- dist
-|    |   |- bundles       访问生成       未压缩   -- 编译后的源代码
-|    |- main.js    -- 入口文件（资源调用的依赖关系）
-|
-|- out -- export(导出)
-|   |- _next -- 输出JS文件
-|   |- index.html -- 输出静态文件
-|
+├─ .next                 dev(执行)      build(转换)
+|    ├─ bundles          【访问生成】      【压缩】    - 编译后的代码
+|    ├─ dist
+|    |   ├─ bundles      【访问生成】     【未压缩】   - 编译后的源代码
+|    └─ main.js    - 入口文件【资源调用的依赖关系】
+├─ build
+|    └─ ssl-keys-dev
+├─ components
+├─ layouts
+├─ libs
+├─ node_modules
+├─ out - export(导出)
+|   ├─ _next - 输出JS文件
+|   └─ index.html - 输出静态文件
+├─ pages   
+├─ static
+├─ .gitignore
+├─ .next.config.js
+├─ package.json
+├─ README.md
+├─ routes.js
+├─ server.js
+├─
 ```
 
 
