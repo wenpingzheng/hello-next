@@ -179,9 +179,9 @@ n v8.11.0
 其次使用yarn next export根据这个BUILD_ID导出静态文件及依赖JS在out目录下
 ```
 ├─ .next                 dev(执行)      build(转换)
-|    ├─ bundles          【访问生成】      【压缩】    - 编译后的代码
+|    ├─ bundles          - 访问生成      - 压缩    - 编译后的代码
 |    ├─ dist
-|    |   ├─ bundles      【访问生成】     【未压缩】   - 编译后的源代码
+|    |   ├─ bundles      - 访问生成     - 未压缩   - 编译后的源代码
 |    └─ main.js    - 入口文件【资源调用的依赖关系】
 ├─ build
 |    └─ ssl-keys-dev
@@ -201,9 +201,6 @@ n v8.11.0
 ├─ routes.js
 └─ server.js
 ```
-
-
-
 
 
 
