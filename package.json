@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",
-    "build": "next build && next export"
+    "build": "next build && next export",
+    "copy_shipei": "node ./build/scripts/copy-to-shipei.js",
+    "out_inject": "node ./build/scripts/out-injector.js"
   },
   "devDependencies": {
     "react": "^16.2.0",
